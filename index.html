@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediksi Penjualan Supermarket</title>
+</head>
+<body>
+
+    <h2>Prediksi Total Penjualan Supermarket</h2>
+
+    <form action="/predict" method="post">
+
+        <label>Unit Price</label><br>
+        <input type="number" step="any" name="unit_price" required><br><br>
+
+        <label>Quantity</label><br>
+        <input type="number" name="quantity" required><br><br>
+
+        <label>COGS</label><br>
+        <input type="number" step="any" name="cogs" required><br><br>
+
+        <label>Gross Income</label><br>
+        <input type="number" step="any" name="gross_income" required><br><br>
+
+        <label>Rating</label><br>
+        <input type="number" step="any" name="rating" required><br><br>
+
+        <button type="submit">Prediksi</button>
+
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
